@@ -31,3 +31,12 @@ function toggleModal() {
   isModalOpen = true;
   document.body.classList += " modal--open";
 }
+
+let contrastToggle = false;
+function toggleContrast() {
+  console.log("toggleContrast");
+  contrastToggle = !contrastToggle;
+  contrastToggle
+    ? (document.body.classList += " dark-theme")
+    : document.body.classList.remove("dark-theme");
+}
