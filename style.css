@@ -25,6 +25,22 @@ button {
   width: 100%;
 }
 
+nav,
+.scroll,
+.header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 800ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+  opacity: 0;
+  visibility: hidden;
+  transform: all 400ms;
+}
+
 input,
 textarea {
   width: 100%;
