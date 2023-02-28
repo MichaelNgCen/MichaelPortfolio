@@ -1,16 +1,23 @@
-// template_5zn5nfo
-// service_tl65poi
-// eTzuZdfxIfX6r6HK7
-
 function contact(event) {
   event.preventDefault();
-
   const loading = document.querySelector(".modal__overlay--loading");
   const success = document.querySelector(".modal__overlay--success");
   loading.classList += " modal__overlay--visible";
-  setTimeout(() => {
-    loading.classList.remove("modal__overlay--visible");
-    success.classList += " modal__overlay--visible";
-    console.log("success");
-  }, 5000);
+  emailjs
+    .sendForm(
+      "service_tl65poi",
+      "template_5zn5nfo",
+      event.target,
+      "eTzuZdfxIfX6r6HK7"
+    )
+    .then(() => {
+      loading.classList.remove("modal__overlay--visible");
+      success.classList += " modal__overlay--visible";
+    })
+    .catch(() => {
+      loading.classList.remove("modal__overlay--visible");
+      alert(
+        "The email service is temporarily unavailable. Please contact me directly on michaelngcen@yahoo.com"
+      );
+    });
 }
