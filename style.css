@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
