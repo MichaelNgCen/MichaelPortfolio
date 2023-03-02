@@ -64,7 +64,16 @@
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey</h1>
-          <h1 class="title">I'm <span class="green">Michael</span></h1>
+          <h1 class="title">I'm <span class="green name"></span></h1>
+          <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+          <script>
+            var typed = new Typed(".name", {
+              strings: ["Michael"],
+              typeSpeed: 100,
+              backSpeed: 100,
+              loop: true,
+            });
+          </script>
           <p class="header__para">
             I'm a <b class="green">software engineer</b> with a strong passion
             for building web applications with great user experience.
