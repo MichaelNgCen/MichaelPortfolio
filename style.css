@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 html {
@@ -725,6 +725,6 @@ footer {
   }
 }
 
-body {
+/* body {
   cursor: url("assets/cursor.png"), auto;
-}
+} */
