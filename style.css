@@ -348,7 +348,7 @@ nav {
 .project__description {
   position: absolute;
   top: 50%;
-  left: 90px;
+  left: 50px;
   transform: translateY(100%);
   opacity: 0;
   transition: opacity 300ms, transform 450ms ease;
@@ -722,5 +722,12 @@ footer {
   }
   .modal__half {
     padding: 40px;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 1024px) {
+  .project__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
   }
 }
